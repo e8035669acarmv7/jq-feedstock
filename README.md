@@ -5,7 +5,7 @@ Home: http://stedolan.github.io/jq/
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A command-line JSON processor.
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jq-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/jq-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/jq-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jq-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jq-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jq-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jq/badges/version.svg)](https://anaconda.org/conda-forge/jq)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jq/badges/downloads.svg)](https://anaconda.org/conda-forge/jq)
 
 
 Updating jq-feedstock
