@@ -10,14 +10,14 @@ source:
   md5: 0933532b086bd8b6a41c1b162b1731f9
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win]
 
 requirements:
   build:
-    - oniguruma 6.0.*
+    - oniguruma 6.1.*
   run:
-    - oniguruma 6.0.*
+    - oniguruma 6.1.*
 
 test:
   commands:
