@@ -10,14 +10,14 @@ source:
   md5: 0933532b086bd8b6a41c1b162b1731f9
 
 build:
-  number: 3
+  number: 4
   skip: True  # [win]
 
 requirements:
   build:
-    - oniguruma 6.1.*
+    - oniguruma 6.8.*
   run:
-    - oniguruma 6.1.*
+    - oniguruma 6.8.*
 
 test:
   commands:
@@ -26,6 +26,7 @@ test:
 about:
   home: http://stedolan.github.io/jq/
   license: MIT
+  license_file: COPYING
   summary: A command-line JSON processor.
 
 extra:
