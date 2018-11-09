@@ -7,14 +7,17 @@ package:
 source:
   fn: jq-{{ version }}.tar.gz
   url: https://github.com/stedolan/jq/releases/download/jq-{{ version }}/jq-{{ version }}.tar.gz
-  md5: 0933532b086bd8b6a41c1b162b1731f9
+  sha256: x
 
 build:
-  number: 4
+  number: 5
   skip: True  # [win]
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - make
+  host:
     - oniguruma 6.8.*
   run:
     - oniguruma 6.8.*
