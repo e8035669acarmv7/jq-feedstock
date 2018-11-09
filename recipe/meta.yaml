@@ -7,7 +7,7 @@ package:
 source:
   fn: jq-{{ version }}.tar.gz
   url: https://github.com/stedolan/jq/releases/download/jq-{{ version }}/jq-{{ version }}.tar.gz
-  sha256: x
+  sha256: c4d2bfec6436341113419debf479d833692cc5cdab7eb0326b5a4d4fbe9f493c
 
 build:
   number: 5
