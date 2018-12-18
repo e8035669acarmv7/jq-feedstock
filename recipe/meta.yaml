@@ -18,9 +18,9 @@ requirements:
     - {{ compiler('c') }}
     - make
   host:
-    - oniguruma 6.8.*
+    - oniguruma 6.9.*
   run:
-    - oniguruma 6.8.*
+    - oniguruma 6.9.*
 
 test:
   commands:
