@@ -1,12 +1,11 @@
-{% set version = "1.7" %}
-
+{% set version = "1.6" %}
 package:
   name: jq
   version: {{ version }}
 
 source:
   url: https://github.com/jqlang/jq/releases/download/jq-{{ version }}/jq-{{ version }}.tar.gz
-  sha256: 402a0d6975d946e6f4e484d1a84320414a0ff8eb6cf49d2c11d144d4d344db62
+  sha256: 5de8c8e29aaa3fb9cc6b47bb27299f271354ebb72514e3accadc7d38b5bbaa72
 
 build:
   number: 0
@@ -19,7 +18,6 @@ requirements:
     - make
   host:
     - oniguruma 6.9.*
-    - valgrind
   run:
     - oniguruma 6.9.*
 
