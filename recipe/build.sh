@@ -9,7 +9,7 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* ./config
 
 chmod +x configure
 
-./configure --disable-maintainer-mode --prefix=$PREFIX --with-oniguruma=$PREFIX
+./configure --prefix=$PREFIX --with-oniguruma=$PREFIX
 
 make -j${CPU_COUNT}
 if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then

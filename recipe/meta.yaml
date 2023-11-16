@@ -5,8 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  fn: jq-{{ version }}.tar.gz
-  url: https://github.com/stedolan/jq/releases/download/jq-{{ version }}/jq-{{ version }}.tar.gz
+  url: https://github.com/jqlang/jq/releases/download/jq-{{ version }}/jq-{{ version }}.tar.gz
   sha256: 402a0d6975d946e6f4e484d1a84320414a0ff8eb6cf49d2c11d144d4d344db62
 
 build:
@@ -28,7 +27,7 @@ test:
     - jq --help  # [not win]
 
 about:
-  home: http://stedolan.github.io/jq/
+  home: https://jqlang.github.io/jq/
   license: MIT
   license_file: COPYING
   summary: A command-line JSON processor.
