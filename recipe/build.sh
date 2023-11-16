@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# set +e
+set +e
 set -x
 
 # Get an updated config.sub and config.guess
