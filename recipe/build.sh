@@ -9,6 +9,10 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* ./config
 
 chmod +x configure
 
+which script
+
+autoreconf -i
+
 ./configure --prefix=$PREFIX --with-oniguruma=$PREFIX
 
 make -j${CPU_COUNT}
