@@ -16,6 +16,7 @@ requirements:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
     - make
+    - autoconf  # [not win]
   host:
     - oniguruma 6.9.*
   run:
