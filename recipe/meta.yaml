@@ -18,6 +18,7 @@ requirements:
     - make
     - autoconf  # [not win]
     - automake  # [not win]
+    - libtool   # [not win]
   host:
     - oniguruma 6.9.*
   run:
