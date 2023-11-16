@@ -17,6 +17,7 @@ requirements:
     - {{ compiler('c') }}
     - make
     - autoconf  # [not win]
+    - autotools # [not win]
   host:
     - oniguruma 6.9.*
   run:
