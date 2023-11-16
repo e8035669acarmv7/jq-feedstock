@@ -19,6 +19,7 @@ requirements:
     - make
   host:
     - oniguruma 6.9.*
+    - valgrind
   run:
     - oniguruma 6.9.*
 
