@@ -3,7 +3,7 @@ About jq-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jq-feedstock/blob/main/LICENSE.txt)
 
-Home: http://stedolan.github.io/jq/
+Home: https://jqlang.github.io/jq/
 
 Package license: MIT
 
