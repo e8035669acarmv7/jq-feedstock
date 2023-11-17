@@ -5,6 +5,8 @@ package:
 
 source:
   url: https://github.com/jqlang/jq/releases/download/jq-{{ version }}/jq-{{ version }}.tar.gz
+  patches:  # [linux]
+    - 0001-disable-color-tests.patch  # [linux]
   sha256: 402a0d6975d946e6f4e484d1a84320414a0ff8eb6cf49d2c11d144d4d344db62
 
 build:
@@ -16,9 +18,6 @@ requirements:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
     - make
-    - autoconf  # [not win]
-    - automake  # [not win]
-    - libtool   # [not win]
   host:
     - oniguruma 6.9.*
   run:

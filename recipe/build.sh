@@ -1,17 +1,12 @@
 #!/bin/bash
 
-set +e
-set -x
+set -eux
 
 # Get an updated config.sub and config.guess
 cp $BUILD_PREFIX/share/gnuconfig/config.* ./modules/oniguruma
 cp $BUILD_PREFIX/share/gnuconfig/config.* ./config
 
 chmod +x configure
-
-which script
-
-autoreconf -i
 
 ./configure --prefix=$PREFIX --with-oniguruma=$PREFIX
 
@@ -20,5 +15,4 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
 make check
 fi
 
-cat ./test-suite.log
 make install
