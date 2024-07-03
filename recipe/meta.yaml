@@ -1,17 +1,17 @@
-{% set version = "1.6" %}
-
+{% set version = "1.7.1" %}
 package:
   name: jq
   version: {{ version }}
 
 source:
-  fn: jq-{{ version }}.tar.gz
-  url: https://github.com/stedolan/jq/releases/download/jq-{{ version }}/jq-{{ version }}.tar.gz
-  sha256: 5de8c8e29aaa3fb9cc6b47bb27299f271354ebb72514e3accadc7d38b5bbaa72
+  url: https://github.com/jqlang/jq/releases/download/jq-{{ version }}/jq-{{ version }}.tar.gz
+  patches:   # [linux]
+    - 0001-disable-color-tests.patch  # [linux]
+  sha256: 478c9ca129fd2e3443fe27314b455e211e0d8c60bc8ff7df703873deeee580c2
 
 build:
-  number: 1000
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -28,7 +28,7 @@ test:
     - jq --help  # [not win]
 
 about:
-  home: http://stedolan.github.io/jq/
+  home: https://jqlang.github.io/jq/
   license: MIT
   license_file: COPYING
   summary: A command-line JSON processor.
@@ -36,3 +36,4 @@ about:
 extra:
   recipe-maintainers:
     - jakirkham
+    - '0xbe7a'
